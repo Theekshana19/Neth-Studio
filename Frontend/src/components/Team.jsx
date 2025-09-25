@@ -1,48 +1,113 @@
 import React from 'react';
 
 const Team = () => {
+  const boardMembers = [
+    {
+      name: 'Indunil Sampath Rajapaksha',
+      role: 'Managing Director (MD)',
+      image: '/assets/images/D1.jpg',
+      bio: 'Overall management, business strategy'
+    },
+    {
+      name: 'Madhuka Shyamali Samarasinghe',
+      role: 'Executive Director',
+      image: '/assets/images/D2.jpg',
+      bio: 'Finance, operations, and marketing'
+    },
+    {
+      name: 'Nethma Sithumi Rajapaksha',
+      role: 'Non-Executive Director',
+      image: '/assets/images/D3.jpg',
+      bio: 'Legal, governance, and industry experience'
+    }
+  ];
+
   const teamMembers = [
     {
-      name: 'John Smith',
-      role: 'Creative Director',
-      image: '/assets/images/neth10.jpg',
-      bio: 'Leading our creative vision with 10+ years of experience in digital design.'
+      name: 'E.M. Tharuk Bandara Jayathilaka',
+      role: 'Senior Graphic Designer & IT Administrator',
+      image: '/assets/images/T1.png',
+      bio: 'Higher National Diploma in Information Technology (HNDIT), Cisco Certified Network Associate (CCNA), Diploma In Information Technology With E-Commerce/Di.T.E.C @ E-Soft. Senior Graphic Designer with 13 years experience, Photographer and Editor, Video Grapher and Video Editor, Online Applications Expert, IT Administrator, Digital Media Design and Printing specialist.'
     },
     {
-      name: 'Sarah Johnson',
-      role: 'Photography Specialist',
-      image: '/assets/images/neth11.jpg',
-      bio: 'Expert photographer specializing in commercial and event photography.'
+      name: 'Madhushika Sandamali',
+      role: 'Senior Graphic Designer',
+      image: '/assets/images/T2.jpg',
+      bio: 'Senior Graphic Designer with 13 years experience, Diploma in Information Technology, Diploma in Graphic Designing, Book Binding Expert.'
     },
     {
-      name: 'Mike Chen',
-      role: 'Video Production Lead',
-      image: '/assets/images/neth12.webp',
-      bio: 'Award-winning videographer with expertise in corporate and creative video production.'
+      name: 'K.G Jayathissa',
+      role: 'Senior Graphic Designer & Photographer',
+      image: '/assets/images/T3.jpg',
+      bio: 'Senior Graphic Designer with 15 years experience, Senior Photographer.'
     },
     {
-      name: 'Emily Davis',
-      role: 'Graphic Designer',
-      image: '/assets/images/neth13.webp',
-      bio: 'Creative designer focused on branding and visual identity development.'
+      name: 'Jayani Randula',
+      role: 'ICT Technician & HR Specialist',
+      image: '/assets/images/T4.jpg',
+      bio: 'Diploma in Information Technology, Information & Communication Technology Technician, Advanced Certificate in HRM (CIPM).'
     },
     {
-      name: 'David Wilson',
-      role: 'IT Solutions Manager',
-      image: '/assets/images/neth14.jpg',
-      bio: 'Technical expert providing comprehensive IT support and digital solutions.'
+      name: 'Gayana Ruwani',
+      role: 'ICT Technician & HR Specialist',
+      image: '/assets/images/T5.jpg',
+      bio: 'Information & Communication Technology Technician, Diploma In HRM, Diploma In Tamil.'
     },
     {
-      name: 'Lisa Brown',
-      role: 'Print & Production Manager',
-      image: '/assets/images/neth15.jpg',
-      bio: 'Specialist in printing, publishing, and production management.'
+      name: 'Senuri Lakshika',
+      role: 'Computer Applications Assistant',
+      image: '/assets/images/T6.jpg',
+      bio: 'HND in Tamil Language, Certified Computer Applications Assistant.'
     }
   ];
 
   return (
     <section id="team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Board of Directors Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Board of Directors
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+            Our leadership team provides strategic direction and governance for NethDigital.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          {boardMembers.map((member, index) => (
+            <div 
+              key={index}
+              className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 border border-blue-100"
+            >
+              <div className="h-48 w-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300 rounded-lg shadow-md"
+                  style={{ 
+                    objectFit: 'contain',
+                    maxHeight: '180px',
+                    maxWidth: '100%'
+                  }}
+                />
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {member.name}
+                </h3>
+                <p className="text-blue-700 font-medium mb-3 text-base">
+                  {member.role}
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {member.bio}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Team Members Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Meet Our Team
@@ -58,11 +123,17 @@ const Team = () => {
               key={index}
               className="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="h-64 overflow-hidden">
+              <div className="h-56 w-full flex items-center justify-center bg-gray-50 overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 rounded-lg"
+                  style={{
+                    objectFit: 'contain',
+                    objectPosition: 'center center',
+                    maxHeight: '200px',
+                    maxWidth: '100%'
+                  }}
                 />
               </div>
               <div className="p-6 text-center">
@@ -93,13 +164,13 @@ const Team = () => {
                     </svg>
                   </a>
                 </div>
-              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
 
 export default Team;
