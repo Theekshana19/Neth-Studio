@@ -5,13 +5,13 @@
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "127fe7f1",
+      "fileHash": "f130507c",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "f8de6378",
+      "fileHash": "5948bee8",
       "needsInterop": true
     }
   },
