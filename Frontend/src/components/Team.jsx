@@ -5,37 +5,37 @@ const Team = () => {
     {
       name: 'John Smith',
       role: 'Creative Director',
-      image: '/assets/images/neth5.jpeg',
+      image: '/assets/images/neth10.jpg',
       bio: 'Leading our creative vision with 10+ years of experience in digital design.'
     },
     {
       name: 'Sarah Johnson',
       role: 'Photography Specialist',
-      image: '/assets/images/neth6.jpeg',
+      image: '/assets/images/neth11.jpg',
       bio: 'Expert photographer specializing in commercial and event photography.'
     },
     {
       name: 'Mike Chen',
       role: 'Video Production Lead',
-      image: '/assets/images/neth7.jpeg',
+      image: '/assets/images/neth12.webp',
       bio: 'Award-winning videographer with expertise in corporate and creative video production.'
     },
     {
       name: 'Emily Davis',
       role: 'Graphic Designer',
-      image: '/assets/images/neth8.jpeg',
+      image: '/assets/images/neth13.webp',
       bio: 'Creative designer focused on branding and visual identity development.'
     },
     {
       name: 'David Wilson',
       role: 'IT Solutions Manager',
-      image: '/assets/images/neth9.jpeg',
+      image: '/assets/images/neth14.jpg',
       bio: 'Technical expert providing comprehensive IT support and digital solutions.'
     },
     {
       name: 'Lisa Brown',
       role: 'Print & Production Manager',
-      image: '/assets/images/neth1.jpeg',
+      image: '/assets/images/neth15.jpg',
       bio: 'Specialist in printing, publishing, and production management.'
     }
   ];
