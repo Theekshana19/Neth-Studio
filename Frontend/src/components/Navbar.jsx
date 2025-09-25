@@ -4,13 +4,13 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 top-0 left-0 bg-white/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-20 md:h-28">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
               src="/assets/images/NETH lOGO.jpg" 
               alt="NethDigital Logo" 
-              className="h-24 w-auto rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="h-16 md:h-24 w-auto rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             />
           </div>
           

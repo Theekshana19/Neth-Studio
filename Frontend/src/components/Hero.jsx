@@ -45,22 +45,22 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
           We Create Digital Experiences That Matter
         </h1>
-        <p className="text-xl sm:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed px-4">
           Showcasing creativity, technology, and results through photography, videography, design, and innovative digital solutions.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a 
             href="#services" 
-            className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+            className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 md:px-10 py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base"
           >
             Our Services
           </a>
           <a 
             href="#contact" 
-            className="inline-block border-2 border-white/50 text-white hover:bg-white/10 hover:border-white font-semibold px-10 py-4 rounded-xl backdrop-blur-sm transition-all duration-300"
+            className="inline-block border-2 border-white/50 text-white hover:bg-white/10 hover:border-white font-semibold px-8 md:px-10 py-3 md:py-4 rounded-xl backdrop-blur-sm transition-all duration-300 text-sm md:text-base"
           >
             Get In Touch
           </a>
